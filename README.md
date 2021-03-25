@@ -27,3 +27,9 @@ With the introduction of packages and modules - alter syntax to invoke the modul
 Make sure to activate the virtual environment
 
 """python3 -m pytest backend/tests""" - note pytest uses conventional syntax i.e. '/'
+
+**Run the application and API**
+
+Make sure to activate the virtual environment
+
+'''python3 -m backend.app'''
