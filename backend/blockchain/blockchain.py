@@ -32,10 +32,16 @@ class Blockchain:
 
         self.chain = chain
 
+    def to_json(self):
+        """
+        Serialize the blockchain into a list of blocks.
+        """
+        return list(map(lambda block: block.to_json(), self.chain))
+
     @staticmethod
     def is_valid_chain(chain):
         """
-        Validate rhe incoming chain.
+        Validate the incoming chain.
         Enforce the following rules of the blockchain:
             -   the chain must start with the genesis block
             -   blocks must be formatted correctly
