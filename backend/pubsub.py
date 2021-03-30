@@ -7,8 +7,13 @@ from pubnub.callbacks import SubscribeCallback
 
 
 pnconfig = PNConfiguration()
+<<<<<<< HEAD
 pnconfig.subscribe_key = os.environ.get("BLOCKCHAIN_SUB_KEY")
 pnconfig.publish_key = os.environ.get("BLOCKCHAIN_PUB_KEY")
+=======
+pnconfig.subscribe_key = 'sub-xxxxxxxxxx'
+pnconfig.publish_key = 'pub-xxxxxxxxxx'
+>>>>>>> 042a592bc6150e7465245d5be3c453e47059728b
 
 CHANNELS = {
     'TEST': 'TEST',
