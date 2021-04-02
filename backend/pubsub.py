@@ -62,9 +62,7 @@ class PubSub:
 
 def main():
     pubsub = PubSub()
-
     time.sleep(1)
-
     pubsub.publish(CHANNELS['TEST'], {'foo': 'bar'})
 
 
